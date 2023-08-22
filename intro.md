@@ -11,7 +11,7 @@ mindmap
   root((Start))
     First
       Check
-      ::icon(fa fa-coffee)
+    Second
 ```
 
 ::: mermaid
