@@ -2,17 +2,8 @@
 flowchart LR;
   a --> b & c --> d;  
 ```
-```mermaid
-graph LR
-    fa:fa-check-->fa:fa-coffee
-```
-```mermaid
-mindmap
-  root((Start))
-    First
-      Check
-    Second
-```
+![diagram](./intro-1.svg)
+![diagram](./intro-2.svg)
 
 ::: mermaid
 graph TD;
