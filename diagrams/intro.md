@@ -1,14 +1,2 @@
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->X;
-    C-->D;
-```
+![diagram](./intro-1.svg)
+![diagram](./intro-2.svg)
