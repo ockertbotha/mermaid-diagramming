@@ -65,10 +65,9 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: generate-diagrams
           token: ${{ secrets.GITHUB_TOKEN }}
           base: main
-          branch: generate-diagrams
+          head: generate-diagrams
           commit-message: Add compiled mermaid
           title: '[MMDC] New mermaid files compiled'
           body: |
