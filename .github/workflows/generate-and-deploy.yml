@@ -67,7 +67,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: main
-          head: generate-diagrams
+          branch: generate-diagrams
           commit-message: Add compiled mermaid
           title: '[MMDC] New mermaid files compiled'
           body: |
