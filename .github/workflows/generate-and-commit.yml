@@ -30,24 +30,6 @@ jobs:
             [ -f "$file" ] || continue
             npx -p @mermaid-js/mermaid-cli mmdc --input $file
           done
-      # - name: Show Changes
-      #   run: |
-      #     git status
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "[Bot] Add generated files."
-
-    #   - name: Commit files
-    #     run: |
-    #       git config --local user.email "action@github.com"
-    #       git config --local user.name "GitHub Action"
-    #       git add -A 
-    #       git commit -m "Add changes" -a
-    #  #     git pull
-          
-    #   - name: Push changes
-    #     uses: ad-m/github-push-action@master
-    #     with:
-    #       github_token: ${{ secrets.GITHUB_TOKEN }}
-    #       branch: main
-
+          commit_message: "Add generated files."

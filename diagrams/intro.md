@@ -1,6 +1,6 @@
 ```mermaid
 graph TD;
-    A-->Z;
+    A-->Q;
     A-->C;
     B-->D;
     C-->D;
