@@ -51,6 +51,10 @@ jobs:
           #git config --local user.name "GitHub Action"
           git add -A 
           git commit -m "Add changes" -a
+      - name: Show Changes
+        run: |
+          git status
+          
 
       # - name: Push changes
       #   uses: ad-m/github-push-action@master
