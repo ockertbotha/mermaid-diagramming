@@ -1,1 +1,4 @@
-![diagram](./action-flow-1.svg)
+```mermaid
+flowchart LR;
+  a --> b & c --> d;  
+```
