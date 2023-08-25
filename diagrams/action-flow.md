@@ -1,4 +1,4 @@
 ```mermaid
 flowchart LR;
-  a --> X & c --> d;  
+  a --> y & c --> d;  
 ```
