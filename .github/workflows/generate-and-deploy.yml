@@ -23,14 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job steps:
     # Checkout to "generate-diagrams" branch
     steps:
-      # - name: Checkout generate-diagrams branch
-      #   uses: actions/checkout@v3
-      #   with:
-      #     ref: generate-diagrams
+      - name: Checkout generate-diagrams branch
+        uses: actions/checkout@v3
+        with:
+          ref: main
 
       - name: Create generate-diagrams branch
         run: |
-          git fetch origin main
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git status
