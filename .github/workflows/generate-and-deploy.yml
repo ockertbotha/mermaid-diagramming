@@ -21,10 +21,20 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job steps:
+    # Checkout to "generate-diagrams" branch
     steps:
-      - name: Checkout
+      - name: Checkout to generate-diagrams branch
         uses: actions/checkout@v3
-        
+        with:
+          ref: generate-diagrams
+
+      - name: Reset generate-diagrams branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git fetch origin main:main
+          git reset --hard main
+          
       - name: Generate Diagrams In Markdown Files
         run: |
           for file in $(find . -name '*.md'); do
@@ -35,11 +45,11 @@ jobs:
         run: |
           git status
 
-      - name: Commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A 
+      # - name: Commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add -A 
       #     git commit -m "Add changes" -a
 
       # - name: Push changes
